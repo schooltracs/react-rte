@@ -321,6 +321,7 @@ export default class EditorToolbar extends Component {
   }
 
   _toggleShowLinkInput(event: ?Object) {
+    event.stopPropagation();
     let isShowing = this.state.showLinkInput;
     // If this is a hide request, decide if we should focus the editor.
     if (isShowing) {
